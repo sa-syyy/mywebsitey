@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pin</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Pinterest</div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="create.html" class="active">Create</a>
+            </nav>
+            <input type="search" placeholder="Search">
+        </div>
+    </header>
+    <main>
+        <div class="create-container">
+            <h1>Create Pin</h1>
+            <div class="upload-area" id="upload-area">
+                <input type="file" id="file-input" accept="image/*,video/*" hidden>
+                <div class="upload-box" id="upload-box">
+                    <p>Choose a file or drag and drop it here</p>
+                    <button id="choose-file">Upload File</button>
+                </div>
+            </div>
+            <div class="form-section">
+                <label>Title</label>
+                <input type="text" id="title" placeholder="Add a title">
+                
+                <label>Description</label>
+                <textarea id="description" placeholder="Add a detailed description"></textarea>
+                
+                <label>Link</label>
+                <input type="url" id="link" placeholder="Add a link">
+                
+                <label>Board</label>
+                <select id="board">
+                    <option disabled selected>Choose a board</option>
+                    <option>Inspiration</option>
+                    <option>Ideas</option>
+                    <option>Favorites</option>
+                </select>
+                
+                <button id="save-button">Save</button>
+            </div>
+        </div>
+    </main>
+    <script src="create.js"></script>
+</body>
+</html>
